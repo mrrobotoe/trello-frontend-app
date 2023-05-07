@@ -1,6 +1,6 @@
 import { slate, slateDark } from '@radix-ui/colors';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { Layout } from '@/components/Layout';
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <ThemeProvider theme={themes.darkMode ? darkTheme : lightTheme}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -35,7 +35,7 @@ function App() {
             <Route path="*" element={<NoMatch />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
