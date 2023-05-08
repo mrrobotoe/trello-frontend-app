@@ -462,7 +462,7 @@ ${E.current.stack}
   flex-direction: column;
   gap: 5px;
 `,FB=ue.h3``,VB=ue.section`
-margin-top: 3rem;
+  margin-top: 3rem;
   position: relative;
 `,jB=ue(Ch)`
   padding: 0.6rem;
