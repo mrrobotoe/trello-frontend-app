@@ -16,12 +16,12 @@ export const AddNewCardContainer = styled(motion.form)`
 
 export const TextAreaContainer = styled(motion.div)`
   background-color: ${(props) => props.theme.colors.slate1};
-  padding: 8px 8px 4px 4px;
+  padding: 4px 8px 4px 5px;
   border-radius: 3px;
   box-shadow: inset 0 0 0 2px ${(props) => props.theme.colors.slate10};
 
   @media ${device.laptop} {
-    padding: 7px 8px 4px 10px;
+    padding: 4px 8px 4px 10px;
   }
 `;
 
@@ -30,7 +30,7 @@ export const AddNewCardFormInput = styled(TextareaAutosize)`
   width: 100%;
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 0.9rem;
   resize: vertical;
   background-color: ${(props) => props.theme.colors.slate1};
   color: ${(props) => props.theme.colors.slate12};

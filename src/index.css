@@ -37,7 +37,7 @@ body {
   min-height: 100svh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', 'Nunito', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */

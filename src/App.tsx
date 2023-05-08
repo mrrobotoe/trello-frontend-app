@@ -1,5 +1,4 @@
 import { slate, slateDark } from '@radix-ui/colors';
-import React from 'react';
 import { Routes, Route, HashRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 

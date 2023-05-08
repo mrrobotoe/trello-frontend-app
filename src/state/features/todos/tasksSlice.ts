@@ -15,22 +15,26 @@ const initialState: StateType = {
     },
     'task-2': { id: 'task-2', content: 'Understand React rules' },
     'task-3': { id: 'task-3', content: 'Download Node JS' },
-    'task-4': { id: 'task-4', content: 'Download VS Code' },
+    'task-4': {
+      id: 'task-4',
+      content: 'Download VS Code',
+      description: 'Need to figure out what OS is best to use VS Code with.',
+    },
   },
   columns: {
     'column-1': {
       id: 'column-1',
-      title: 'To Do',
+      title: 'TO DO',
       taskIds: ['task-1', 'task-2'],
     },
     'column-2': {
       id: 'column-2',
-      title: 'In Progress',
+      title: 'IN PROGRESS',
       taskIds: ['task-3'],
     },
     'column-3': {
       id: 'column-3',
-      title: 'Done',
+      title: 'DONE',
       taskIds: ['task-4'],
     },
   },

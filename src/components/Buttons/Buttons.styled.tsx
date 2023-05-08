@@ -9,12 +9,14 @@ export const AddNewCardButton = styled.button<TAddItemButtonProps>`
   border-radius: 3px;
   border: none;
   font-size: 15px;
-  color: ${(props) => (!props.dark ? props.theme.colors.slate12 : props.theme.colors.slate1)};
+  color: ${(props) => (!props.dark ? props.theme.colors.slate11 : props.theme.colors.slate1)};
   cursor: pointer;
   width: 100%;
   padding: 5px 10px;
   text-align: left;
   transition: background 0.24s ease-in;
+  font-size: 0.9rem;
+  font-weight: 400;
   &:hover {
     background-color: ${(props) => (props.dark ? '#ffffff74' : props.theme.colors.slate4)};
   }
@@ -23,6 +25,7 @@ export const AddNewCardButton = styled.button<TAddItemButtonProps>`
 export const AddNewColumnButton = styled(AddNewCardButton)`
   padding: 10px 12px;
   color: ${(props) => (props.dark ? props.theme.colors.slate12 : props.theme.colors.slate1)};
+  font-size: 0.9rem;
 `;
 
 export const AddNewColumnFormButton = styled.button`
@@ -33,6 +36,7 @@ export const AddNewColumnFormButton = styled.button`
   color: ${(props) => props.theme.colors.slate1};
   cursor: pointer;
   width: 5rem;
+  font-size: 0.9rem;
   &:hover {
     background-color: ${(props) => props.theme.colors.slate11};
   }
@@ -43,3 +47,23 @@ export const AddNewColumnFormButton = styled.button`
 `;
 
 export const AddNewCardFormButton = styled(AddNewColumnFormButton)``;
+
+export const ButtonContainer = styled.div`
+  position: absolute;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  top: 1.2rem;
+  right: 1rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.slate4};
+  }
+
+  &:active {
+    background-color: ${(props) => props.theme.colors.slate5};
+  }
+`;

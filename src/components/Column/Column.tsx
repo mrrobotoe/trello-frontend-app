@@ -83,7 +83,7 @@ export const Column: React.FC<Props> = (props) => {
               />
             </ColumnTitleContainer>
             <Droppable droppableId={props.column.id} type="card" direction="vertical">
-              {(provided, snapshot) => {
+              {(provided) => {
                 return (
                   <>
                     <CardList

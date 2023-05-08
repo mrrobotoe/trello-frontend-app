@@ -3,15 +3,6 @@ import styled from 'styled-components';
 
 import { ReactComponent as CloseButtonIcon } from '../../../assets/close.svg';
 
-// const display = keyframes`
-//   from {
-//     opacity: 0;
-//   }
-//   to {
-//     opacity: 1;
-//   }
-// `;
-
 export const AddNewColumnFormContainer = styled(motion.form)`
   display: flex;
   flex-direction: column;

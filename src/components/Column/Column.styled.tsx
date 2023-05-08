@@ -26,7 +26,7 @@ export const ColumnComponent = styled.section<TColumnComponentProps>`
   white-space: normal;
   position: relative;
   box-sizing: border-box;
-  padding: 0.6rem;
+  padding: 0.5rem;
 `;
 
 export const ColumnTitleContainer = styled.div`
@@ -42,13 +42,13 @@ export const ColumnTextArea = styled(TextareaAutoSize)`
   border: none;
   resize: none;
   color: ${(props) => props.theme.colors.slate12};
-  font-weight: 600;
+  font-family: 'Nunito';
+  font-weight: 700;
   min-height: 20px;
   max-height: 256px;
   font-size: 0.9rem;
   padding-right: 32px;
   background-color: transparent;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 90%;
 
   &:disabled {

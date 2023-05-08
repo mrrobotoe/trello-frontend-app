@@ -5,6 +5,7 @@ export type TTask = {
   completedBy?: string;
   owner?: string;
   creator?: string;
+  description?: string;
 };
 
 export type TColumn = {

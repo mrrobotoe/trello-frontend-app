@@ -18,7 +18,11 @@ export const CardContainer = styled.article<TCardComponentProps>`
   gap: 2px;
   width: 100%;
   margin: 4px 0 4px;
-  cursor: pointer;
+  cursor: pointer !important;
+
+  &:active {
+    background-color: ${(props) => props.theme.colors.slate5};
+  }
 `;
 
 export const CardTopContainer = styled.div`
@@ -29,6 +33,8 @@ export const CardTopContainer = styled.div`
 export const CardTitleContainer = styled.div`
   color: ${(props) => props.theme.colors.slate12};
   padding: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
 `;
 
 export const CardBottomContainer = styled.div``;
